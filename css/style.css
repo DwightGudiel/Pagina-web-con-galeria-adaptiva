@@ -1,0 +1,63 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /* para usar mejor box model */
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif; /* por defecto se carga el estilo de 700 */
+}
+/*fin */
+
+ /* para usar mejor box model */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img{
+ width: 100%;
+ height: 100%;
+}
+
+header{
+    text-align: center;
+    background: teal;
+    color:white;
+}
+
+.contenedor{
+    max-width: 200rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sombra{ /* agregamos sombra el contenedor */ 
+    box-shadow: 0px 5px 15px 0px rgba(107,103,107,0.6);
+    background: var(--blanco);
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .columna3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .columna2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 2rem;
+    }
+}
+
+
+footer{
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
